@@ -2,7 +2,7 @@ class dhclient::config {
 
   $root_cfg = $::lsbdistcodename?{
     'trusty'  => '/etc/dhcp',
-    default   => '/ect/dhcp3'
+    default   => '/etc/dhcp3'
   }
 
   file {"${root_cfg}/dhclient.conf":
